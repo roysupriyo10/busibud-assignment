@@ -13,25 +13,66 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <nav class="navbar">
+      <nav class="navbar navbar-expand-md">
+        <div class="container d-flex flex-md-column flex-row">
           <div>
-            <a class="navbar-brand w-100" href="/"
-              ><img src="public/assets/Group117.svg" alt=""
+            <a class="navbar-brand w-auto" href="/"
+              ><img src="assets/Group117.svg" alt=""
             /></a>
           </div>
-          <div>Nav1</div>
-          <div>Nav2</div>
-          <div>Nav3</div>
-          <div>Nav4</div>
-          <div>Nav5</div>
-          <div>Nav6</div>
-          <div>Nav7</div>
-          <div>Nav8</div>
-        </nav>
-      </div>
+          
+          <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand Navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse mt-3" id="nav">
+            <ul class="navbar-nav fs-4 fw-bold justify-content-around w-100">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Nav1</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Nav2</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Nav3</a>
+                <div class="dropdown">
+
+                  <button class="btn dropdown-toggle" type="button" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                  <div class="dropdown-menu" aria-labelledby="dropdown1">
+                    <a href="#" class="dropdown-item">Test 1</a>
+                    <a href="#" class="dropdown-item">Test 1</a>
+                    <a href="#" class="dropdown-item">Test 1</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Nav4</a>
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle" type="button" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">⌄</button>
+                  <div class="dropdown-menu" aria-labelledby="dropdown2">
+                    <a href="#" class="dropdown-item">Test 2</a>
+                    <a href="#" class="dropdown-item">Test 2</a>
+                    <a href="#" class="dropdown-item">Test 2</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Nav5</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Nav6</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Nav7</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Nav8</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    <main>
+    <main class="mt-5">
       <div class="container">
         <h1 class="hero__title">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
